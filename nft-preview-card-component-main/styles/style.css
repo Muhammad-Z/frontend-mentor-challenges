@@ -1,0 +1,86 @@
+:root {
+    --primary-first-color: hsl(215, 51%, 70%);
+    --primary-second-color: hsl(178, 100%, 50%);
+
+    --main-bg-color: hsl(216, 54%, 11%);
+    --card-bg-color: hsl(215, 51%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --font-p-size: 18px;
+    --font-weight-small: 300;
+    --font-weight-medium: 400;
+    --font-weight-large: 600;
+
+    background-color: var(--main-bg-color);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.google.com/specimen/Outfit");
+}
+
+.nft-card-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 16px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--card-bg-color);
+}
+
+.nft-card-container h1 {
+    color: var(--white-color);
+    font-weight: var(--font-weight-large);
+}
+
+.nft-card-container p {
+    color: var(--primary-first-color);
+}
+
+.nft-card-container img {
+    max-height: 400px;
+    object-fit: scale-down;
+    border-radius: 8px;
+}
+
+.price-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-time .price {
+    color: var(--primary-second-color);
+    font-weight: var(--font-weight-large);
+}
+
+.price-time p {
+    display: flex;
+    justify-self: space-between;
+}
+
+.price-time img {
+    padding-right: 0.5rem;
+}
+
+.creator-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.creator-info img {
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator-info p {
+    padding-left: 1rem;
+}
