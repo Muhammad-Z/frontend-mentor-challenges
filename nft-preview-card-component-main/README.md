@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Muhammad-Z/frontend-mentor-challenges/tree/main/nft-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Muhammad-Z/frontend-mentor-challenges/tree/main/nft-preview-card-component-main)
+- Live Site URL: [GitHub Pages](https://muhammad-z.github.io/frontend-mentor-challenges/nft-preview-card-component-main/)
 
 ## My process
 
