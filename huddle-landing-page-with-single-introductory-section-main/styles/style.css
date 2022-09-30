@@ -1,0 +1,107 @@
+:root {
+    --primary-bg-color: hsl(257, 40%, 49%);
+    --secondary-bg-color: hsl(300, 69%, 71%);
+}
+
+
+
+@font-face {
+    font-family: poppins;
+    src: url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2");
+    font-weight: 400, 600;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-color: var(--primary-bg-color);
+    font-family: "Open Sans";
+    color: white;
+    font-weight: 400;
+}
+
+.landing header {
+    padding: 3rem;
+}
+
+.landing header>img {
+    width: 300px;
+}
+
+.landing main {
+    display: flex;
+    padding-left: 3rem;
+}
+
+.landing main>section {
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+
+.landing .register-btn {
+    padding: 1rem 2rem;
+    border-radius: 32px;
+    width: 10rem;
+    color: var(--primary-bg-color);
+    border: none;
+}
+
+.landing .register-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-bg-color);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+    padding-right: 5rem;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inherit;
+}
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    border: 0 !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+.icon-twitter-mark-small {
+    mask-image: url('https://unpkg.com/ionicons@5.5.2/dist/svg/logo-twitter.svg');
+}
+
+.icon-border {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    margin: 0.3rem;
+}
+
+.icon-facebook-mark-small {
+    mask-image: url('https://unpkg.com/ionicons@5.5.2/dist/svg/logo-facebook.svg');
+}
+
+.icon-instagram-mark-small {
+    mask-image: url('https://unpkg.com/ionicons@5.5.2/dist/svg/logo-instagram.svg');
+}

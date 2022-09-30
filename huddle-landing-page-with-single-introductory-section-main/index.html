@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .strokeme {
+      color: black;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
+<body class="landing">
+  <header>
+    <img src="images/logo.svg" alt="logo" />
+  </header>
+  <main>
+    <img src="images/illustration-mockups.svg" alt="bg-desktop" />
+    <section>
+      <h2>
+        Build The Community Your Fans Will Love
+      </h2>
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="register-btn">Register</button>
+    </section>
+  </main>
+  <nav>
+    <div class="icon-border">
+      <a class="icon icon-facebook-mark-small" href="https://www.facebook.com">
+        <span class="visually-hidden">facebook</span>
+      </a>
+    </div>
+    <div class="icon-border">
+      <a class="icon icon-twitter-mark-small" href="https://www.twitter.com">
+        <span class="visually-hidden">twitter</span>
+      </a>
+    </div>
+    <div class="icon-border">
+      <a class="icon icon-instagram-mark-small" href="https://www.instagram.com">
+        <span class="visually-hidden">instagram</span>
+      </a>
+    </div>
+  </nav>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a class="strokeme" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="strokeme" href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <!-- icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
