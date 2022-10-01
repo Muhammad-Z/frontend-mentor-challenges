@@ -1,0 +1,105 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    --primary-color-1: var(--moderate-violet);
+    --primary-color-2: var(--very-dark-grayish-blue);
+    --primary-color-3: var(--very-dark-blackish-blue);
+    --primary-color-4: var(--white);
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("https://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXeIqq.woff2");
+    font-weight: 500;
+}
+
+.testimonial-page {
+    font-family: "barlowsemicondensed", "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    background-color: #ecf1f8;
+}
+
+.testimones {
+    display: grid;
+    grid-template-columns: minmax(1fr, auto);
+    grid-template-rows: minmax(1fr,auto);
+    grid-gap: 16px;
+    margin: 100px;
+}
+
+article {
+    padding: 24px;
+}
+
+.article-1 {
+    background-color: var(--primary-color-1);
+    grid-column: 1/3;
+    grid-row: 1;
+    color: var(--white);
+}
+
+.article-2 {
+    background-color: var(--primary-color-2);
+    grid-column: 3;
+    grid-row: 1;
+    color: var(--white);
+}
+
+.article-3 {
+    background-color: var(--primary-color-4);
+    grid-column: 4;
+    grid-row: 1/3;
+    color: var(--very-dark-grayish-blue);
+}
+
+.article-4 {
+    background-color: var(--primary-color-4);
+    grid-column: 1;
+    grid-row: 2;
+    color: var(--very-dark-grayish-blue);
+}
+
+.article-5 {
+    background-color: var(--primary-color-3);
+    grid-column: 2/4;
+    grid-row: 2;
+    color: var(--white);
+}
+
+.user-status {
+    opacity: 50%;
+}
+
+.review-p {
+    opacity: 70%;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.author-info img {
+    border-radius: 50%;
+}
+
+.author-name-and-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+
+.author-name-and-status p {
+    margin: 0;
+    margin-left: 1rem;
+}
