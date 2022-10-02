@@ -1,0 +1,169 @@
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+
+    --icon-color: var(--grayish-blue);
+    --icon-bg-color: var(--very-dark-blue);
+    --section-bg-color: var(--dark-blue);
+    --font-color: var(--pale-blue);
+
+
+    --bar-height: 1rem;
+    --padding-space: calc(var(--bar-height) / 2 * 0.9);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2');
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    background-size: 100% 50%;
+    background-position: bottom;
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+}
+
+.fylo-storage-component {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    font-family: Raleway;
+    color: var(--font-color);
+}
+
+.fylo-icon {
+    margin-bottom: 1rem;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.tools img {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    color: var(--icon-color);
+    background-color: var(--icon-bg-color);
+    border-radius: 8px;
+}
+
+.numeric-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    padding: 2rem;
+    background-color: var(--section-bg-color);
+    border-radius: 8px;
+}
+
+.left {
+    border-top-right-radius: 64px;
+    padding-right: 5rem;
+}
+
+.right {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.bar {
+    position: relative;
+    background-image: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 81.5%;
+    height: var(--bar-height);
+    border-radius: 16px;
+}
+
+.bar::after {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    background-color: white;
+    padding: var(--padding-space);
+    width: max-content;
+    content:"";
+    transform: translateY(calc(var(--padding-space) * 0.1));
+}
+
+
+.bar-space {
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 300px;
+}
+
+/* .right::after {
+    content: "185 GB Left";
+    padding: 4px 8px;
+    color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 20;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #222;
+    background-color: white;
+}
+
+.right::before {
+    right:0;
+    position: absolute;
+    content: "";
+    width: 0;
+    border-top: 20px solid black;
+    border-left: 20px solid blue;
+    border-right: 20px solid white;
+} */
+
+.bubble {
+    padding: 15px 10px;
+    color: #333;
+    position: absolute;
+    right: 10%;
+    top: -20%;
+    width:fit-content;
+    white-space: nowrap;
+    z-index: 20;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #222;
+    background-color: white;
+    border-bottom-right-radius: 0;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent white transparent transparent;
+    bottom: -30%;
+    left: 90%;
+    margin-left: -10px;
+  }
