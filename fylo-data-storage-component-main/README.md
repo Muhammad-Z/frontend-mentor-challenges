@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n/hub/fylo-data-storage-component-Pj3JCfr3eq)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/fylo-storage-component-using-vanilla-css-flexbox-after-JSvaPdC7CM)
 - Live Site URL: [GitHub Pages](https://muhammad-z.github.io/frontend-mentor-challenges/fylo-data-storage-component-main)
 
 ## My process
