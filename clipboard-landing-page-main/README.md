@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-clipboard-landing-page-using-pure-css-mediaqueries-gzCvJoPbeI)
 - Live Site URL: [GitHub Pages](https://muhammad-z.github.io/frontend-mentor-challenges/clipboard-landing-page-main)
 
 ## My process
