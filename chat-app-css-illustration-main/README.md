@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://muhammad-z.github.io/frontend-mentor-challenges/chat-app-css-illustration-main/index.html)
 
 ## My process
 
