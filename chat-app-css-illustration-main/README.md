@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-mobilefirst-vanilla-htmlcss-lZrnaODVMc)
 - Live Site URL: [GitHub Pages](https://muhammad-z.github.io/frontend-mentor-challenges/chat-app-css-illustration-main/index.html)
 
 ## My process
