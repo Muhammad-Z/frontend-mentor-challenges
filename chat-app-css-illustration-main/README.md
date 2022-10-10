@@ -41,6 +41,6 @@ Practise more with border-radius
 
 # Author
 
-- Website - [Muhammad Z](https://muhammad-z.github.io/)
+- Website - [GitHub Pages](https://muhammad-z.github.io/)
 - Frontend Mentor - [@muhammad-z](https://www.frontendmentor.io/profile/Muhammad-Z)
 
