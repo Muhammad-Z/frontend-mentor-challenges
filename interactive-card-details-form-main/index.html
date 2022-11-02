@@ -1,51 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="./styles/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="./styles/style.css">
+
+  <script src="./index.js"></script>
 </head>
+
 <body>
+    <div class="upper">
+      <div id="bg-card-back-container" class="container">
+        <img class="card" src="./images/bg-card-back.png" alt="bg-card-back">
+        <div id='cvc-number-display' class="cvc-show details-color">000</div>
+      </div>
+      <div id="bg-card-front-container" class="container">
+        <img class="card" src="./images/bg-card-front.png" alt="bg-card-front">
+        <div>
+          <img class="card-circle" src="./images/card-logo.svg" alt="card-logo">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+          <div id='card-number-display' class="details-on-card show-number details-color">0000 0000 0000 0000</div>
+          <div id='card-name-display' class="details-on-card show-name details-color">Jane Appleseed</div>
+          <div id='card-date-display' class="details-on-card show-date details-color"><span
+              id="card-date-MM-display">00</span>/<span id="card-date-YY-display">00</span></div>
+        </div>
+      </div>
 
-  000
+    </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <form id="form" onsubmit="handleConfirm(event)">
+      <label>Cardholder Name
+        <input id="card-name-input" name="card-name-input" data-affect="card-name-display"
+          oninput="checkValidation(event)" placeholder="e.g. Jane Appleseed" required>
+        <span id="card-name-input-error" class="error"></span>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+      </label>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+      <label>Card Number
+        <input id="card-number-input" name="card-number-input" data-affect="card-number-display"
+          oninput="checkValidation(event)" placeholder="e.g. 1234 5678 9123 0000" required>
+        <span id="card-number-input-error" class="error"></span>
+      </label>
 
-  CVC
-  e.g. 123
+      <div class="fields-row">
+        <label id="lblDate">Exp. Date (MM/YY)</label>
+        <label for="cvc">CVC</label>
+        <input id="card-date-input-MM" name="card-date-input" data-affect="card-date-MM-display"
+          oninput="return checkValidation(event, 'mm')" class="inputDate" aria-labelledby="lblDate" placeholder="MM"
+          required>
+        <input id="card-date-input-YY" name="card-date-input" data-affect="card-date-YY-display"
+          oninput="return checkValidation(event, 'yy')" class="inputDate" aria-labelledby="lblDate" placeholder="YY"
+          required>
+        <input id="card-cvc-input" name="card-cvc-input" data-affect="cvc-number-display"
+          oninput="checkValidation(event)" id="cvc" placeholder="e.g. 123" required>
+        <span id="card-date-input-error" class="error"></span>
+        <span id="card-cvc-input-error" class="error"></span>
+      </div>
 
-  Confirm
+      <button onclick="handleConfirm(event)">Confirm</button>
 
-  <!-- Completed state start -->
+    </form>
 
-  Thank you!
-  We've added your card details
-  Continue
-  
+    <!-- Completed state start -->
+
+    <div id="completed-form" class="hidden">
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+    </div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Muhammad Z</a>.
   </div>
+
 </body>
+
 </html>

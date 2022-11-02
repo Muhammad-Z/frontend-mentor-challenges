@@ -1,0 +1,161 @@
+@import url('./colors.css');
+@import url('./fonts.css');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  background-image: url('../images/bg-main-mobile.png');
+  background-size: 100% 33%;
+  background-repeat: no-repeat;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: var(--very-dark-violet);
+  font-weight: 500;
+}
+
+label text{
+  margin-bottom: 1rem;
+}
+
+input::placeholder {
+  color: var(--dark-grayish-violet);
+  font-weight: 500;
+}
+
+.fields-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fields-row label {
+  flex: 0 1 50%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: none;
+  border: 1px solid hsla(279, 6%, 55%, 0.5);
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+.fields-row input {
+  flex: 0 1 50%;
+  max-width: 50%;
+}
+
+.fields-row .inputDate {
+  max-width: 20%;
+}
+
+.fields-row .error {
+  max-width: 50%;
+}
+
+.date-row {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.upper {
+  height: 33.33vh;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#bg-card-back-container {
+  left: 20%;
+  top: 10%;
+}
+
+#bg-card-front-container {
+  left: 5%;
+  bottom: 7%;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 50%;
+}
+
+.card-circle {
+  position: absolute;
+  z-index: 10;
+  width: 20%;
+  top: 10%;
+  left: 10%;
+}
+
+.cvc-show {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.details-color {
+  color: var(--light-grayish-violet);
+  font-weight: 500;
+}
+
+.show-number {
+  top: 60%;
+  left: 5%;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.show-name {
+  bottom: 5%;
+  left: 5%;
+}
+
+.show-date {
+  bottom: 5%;
+  right: 5%;
+}
+
+.details-on-card {
+  position: absolute;
+}
+
+button {
+  margin-top: 5%;
+  width: 100%;
+  flex-direction: center;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  padding: 1rem;
+}
+
+.wrong-input {
+  border: 2px solid red;
+}
+
+.error {
+  color: red;
+  width: 100%;
+}
