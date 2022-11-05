@@ -22,36 +22,39 @@
     }
   </style>
   <link rel="stylesheet" href="./styles/smallscreen.css">
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="./styles/widescreen.css">
+  <link rel="stylesheet" media="screen and (min-width: 800px)" href="./styles/widescreen.css">
 </head>
 
 <body>
-  <img src="./images/logo.svg" alt="logo">
+  <img id="logo" src="./images/logo.svg" alt="logo">
 
   <main class="rounded">
-    <label>Bill
-      <div class="input-container" style="--before-img: url('../images/icon-dollar.svg');">
-        <input class="rounded" id="bill-amount">
+    <section class="col-6">
+      <label>Bill
+        <div class="input-container" style="--before-img: url('../images/icon-dollar.svg');">
+          <input class="rounded" id="bill-amount">
+        </div>
+      </label>
+
+
+      <div id="tip-options" class="tip-options">
+        <label id="tip-choice" class="col-12">Select Tip %</label>
+        <input type="button" value="5%" aria-labelledby="tip-choice">
+        <input type="button" value="10%" aria-labelledby="tip-choice">
+        <input type="button" value="15%" aria-labelledby="tip-choice">
+        <input type="button" value="20%" aria-labelledby="tip-choice">
+        <input type="button" value="25%" aria-labelledby="tip-choice">
+        <input id="customTip" class="rounded" placeholder="Custom" aria-labelledby="tip-choice"
+          oninput="computeAndShowMoney()">
       </div>
-    </label>
 
+      <label for="pplCount">Number of People</label> <span id="errorSpan" class="error hidden">can't be zero</span>
+      <div class="input-container" style="--before-img: url('../images/icon-person.svg');">
+        <input class="rounded" id="pplCount">
+      </div>
+    </section>
 
-    <div id="tip-options" class="tip-options">
-      <label id="tip-choice" class="col-12">Select Tip %</label>
-      <input type="button" value="5%" aria-labelledby="tip-choice">
-      <input type="button" value="10%" aria-labelledby="tip-choice">
-      <input type="button" value="15%" aria-labelledby="tip-choice">
-      <input type="button" value="20%" aria-labelledby="tip-choice">
-      <input type="button" value="25%" aria-labelledby="tip-choice">
-      <input id="customTip" class="rounded" placeholder="Custom" aria-labelledby="tip-choice" oninput="computeAndShowMoney()">
-    </div>
-
-    <label for="pplCount">Number of People</label> <span id="errorSpan" class="error hidden">can't be zero</span>
-    <div class="input-container" style="--before-img: url('../images/icon-person.svg');">
-      <input class="rounded" id="pplCount">
-    </div>
-
-    <div class="result-pane rounded">
+    <section class="result-pane rounded col-6">
       <div>Tip Amount<br>
         <span>/ person</span>
       </div>
@@ -72,7 +75,7 @@
       </div>
 
       <button class="reset-btn">Reset</button>
-    </div>
+    </section>
   </main>
 
   <div class="attribution">

@@ -17,6 +17,16 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  background-color: var(--desktop-bg-color);
+}
+
+main {
+  background-color: white;
+  padding: 2rem;
+}
+
+#logo {
+  margin-bottom: 1rem;
 }
 
 label {
@@ -29,7 +39,7 @@ label {
 }
 
 .tip-options input:focus {
-  color: var(--btn-option-color); 
+  color: var(--btn-option-color);
   background-color: var(--btn-selected-color);
 }
 
@@ -96,6 +106,7 @@ input[type="button"] {
   border: none;
   color: var(--btn-option-color);
 }
+
 /* 
 label::after {
   content: url('../images/icon-dollar.svg');
@@ -111,23 +122,23 @@ label::after {
 .input-container::before {
   content: var(--before-img);
   position: absolute;
-  left: 0.5rem; 
+  left: 0.5rem;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
 }
 
 .highlight {
-  color: var(--btn-option-color) !important; 
-  background-color: var(--btn-selected-color)  !important;
+  color: var(--btn-option-color) !important;
+  background-color: var(--btn-selected-color) !important;
 }
 
 .money-output::before {
   content: '$';
 }
 
-span.error{
-  float:right;
+span.error {
+  float: right;
   color: red;
 }
 

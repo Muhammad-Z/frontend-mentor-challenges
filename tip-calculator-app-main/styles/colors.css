@@ -14,4 +14,5 @@
   --ambient-color: var(--very-light-grayish-cyan);
   --font-color: var(--dark-grayish-cyan);
   --reset-btn-color: var(--btn-option-color);
+  --desktop-bg-color: var(--light-grayish-cyan);
 }

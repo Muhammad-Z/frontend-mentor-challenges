@@ -19,3 +19,17 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+main {
+  display: flex;
+  width: 60%;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+#logo {
+  margin-bottom: 3rem;
+}
+
+section {
+  width: 50%;
+}
