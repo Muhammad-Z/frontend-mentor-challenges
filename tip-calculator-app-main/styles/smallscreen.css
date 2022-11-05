@@ -137,6 +137,13 @@ label::after {
   content: '$';
 }
 
+.money-output {
+  color: var(--money-color);
+  font-size: 1.2em;
+  font-weight: bold;
+  flex-shrink: 1;
+}
+
 span.error {
   float: right;
   color: red;
