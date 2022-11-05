@@ -1,0 +1,140 @@
+@import url('./colors.css');
+@import url('./fonts.css');
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+label {
+  color: var(--font-color);
+}
+
+.tip-options input {
+  background-color: var(--btn-option-color);
+  color: var(--white);
+}
+
+.tip-options input:focus {
+  color: var(--btn-option-color); 
+  background-color: var(--btn-selected-color);
+}
+
+.result {
+  background-color: var(--btn-option-color);
+}
+
+
+.tip-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tip-options input {
+  flex-shrink: 1;
+  flex-basis: 50%;
+  border: 5px solid white;
+  padding: 5px;
+  max-width: 50%;
+}
+
+input {
+  position: relative;
+  background-color: var(--very-light-grayish-cyan);
+  text-align: right;
+  border: none;
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 12px;
+}
+
+input[type="button"] {
+  border-radius: 12px;
+}
+
+.result-pane {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--reset-btn-color);
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.result-pane div {
+  flex-shrink: 1;
+  flex-basis: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 24px;
+}
+
+.result-pane div span {
+  color: var(--grayish-cyan);
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--strong-cyan);
+  border: none;
+  color: var(--btn-option-color);
+}
+/* 
+label::after {
+  content: url('../images/icon-dollar.svg');
+  position: absolute;
+  left: 0;
+  background-image: url('../images/icon-dollar.svg');
+} */
+
+.input-container {
+  position: relative;
+}
+
+.input-container::before {
+  content: var(--before-img);
+  position: absolute;
+  left: 0.5rem; 
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.highlight {
+  color: var(--btn-option-color) !important; 
+  background-color: var(--btn-selected-color)  !important;
+}
+
+.money-output::before {
+  content: '$';
+}
+
+span.error{
+  float:right;
+  color: red;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.hidden {
+  display: none;
+}

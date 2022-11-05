@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="stylesheet" href="./styles/smallscreen.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="./styles/widescreen.css">
 </head>
+
 <body>
+  <img src="./images/logo.svg" alt="logo">
 
-  Bill
+  <main class="rounded">
+    <label>Bill
+      <div class="input-container" style="--before-img: url('../images/icon-dollar.svg');">
+        <input class="rounded" id="bill-amount">
+      </div>
+    </label>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
 
-  Number of People
+    <div id="tip-options" class="tip-options">
+      <label id="tip-choice" class="col-12">Select Tip %</label>
+      <input type="button" value="5%" aria-labelledby="tip-choice">
+      <input type="button" value="10%" aria-labelledby="tip-choice">
+      <input type="button" value="15%" aria-labelledby="tip-choice">
+      <input type="button" value="20%" aria-labelledby="tip-choice">
+      <input type="button" value="25%" aria-labelledby="tip-choice">
+      <input id="customTip" class="rounded" placeholder="Custom" aria-labelledby="tip-choice" oninput="computeAndShowMoney()">
+    </div>
 
-  Tip Amount
-  / person
+    <label for="pplCount">Number of People</label> <span id="errorSpan" class="error hidden">can't be zero</span>
+    <div class="input-container" style="--before-img: url('../images/icon-person.svg');">
+      <input class="rounded" id="pplCount">
+    </div>
 
-  Total
-  / person
+    <div class="result-pane rounded">
+      <div>Tip Amount<br>
+        <span>/ person</span>
+      </div>
+      <!-- here goes somthing -->
 
-  Reset
-  
+      <div>
+        <spin class="money-output" id="tipAmount">0.00</spin>
+      </div>
+
+      <div>
+        Total<br>
+        <span>/ person</span>
+      </div>
+      <!-- here goes something -->
+
+      <div>
+        <spin class="money-output" id="totalAmount">0.00</spin>
+      </div>
+
+      <button class="reset-btn">Reset</button>
+    </div>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./index.js"></script>
 </body>
+
 </html>
