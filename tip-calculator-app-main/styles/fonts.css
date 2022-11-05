@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Space Mono";
   src: url('https://fonts.gstatic.com/s/spacemono/v12/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2');
-  font-weight: 700;
+  font-weight: 700, 900;
 }
 
 input, button {
