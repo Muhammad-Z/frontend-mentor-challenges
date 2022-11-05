@@ -35,7 +35,9 @@ function computeAndShowMoney() {
 }
 
 Array.from(document.getElementById('tip-options').children).map(elem => elem.addEventListener('click', selectTipOption))
-Array.from(document.querySelectorAll('INPUT')).map(elem => elem.addEventListener('click', computeAndShowMoney))
+Array.from(document.querySelectorAll('INPUT:not([type="button"]')).map(elem => elem.addEventListener('input', computeAndShowMoney))
+Array.from(document.querySelectorAll('INPUT[type="button"]')).map(elem => elem.addEventListener('click', computeAndShowMoney))
+
 
 
 function validateInput(target) {
