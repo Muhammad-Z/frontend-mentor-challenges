@@ -34,11 +34,9 @@ function computeAndShowMoney() {
   document.getElementById('totalAmount').innerText = total ? total.toFixed(2) : (0).toFixed(2);
 }
 
-Array.from(document.getElementById('tip-options').children).map(elem => elem.addEventListener('click', selectTipOption))
 Array.from(document.querySelectorAll('INPUT:not([type="button"]')).map(elem => elem.addEventListener('input', computeAndShowMoney))
-Array.from(document.querySelectorAll('INPUT[type="button"]')).map(elem => elem.addEventListener('click', computeAndShowMoney))
-
-
+document.getElementById('tip-options').addEventListener('click', selectTipOption);
+document.getElementById('tip-options').addEventListener('click', computeAndShowMoney);
 
 function validateInput(target) {
   let digitsRegex = /^\d+$/;
