@@ -33,3 +33,7 @@ main {
 section {
   width: 50%;
 }
+
+.tip-options input {
+  flex-basis: 33.33%;
+}
