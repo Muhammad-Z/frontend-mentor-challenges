@@ -156,3 +156,12 @@ input.error {
 .hidden {
   display: none;
 }
+
+input:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--btn-hovered-color);
+}
