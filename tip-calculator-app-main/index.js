@@ -6,8 +6,7 @@ let options = document.getElementById('tip-options');
 function selectTipOption(event) {
   let target = event.target; // where was the click?
 
-  if (target.tagName !== 'INPUT') return; // not on TD? Then we're not interested
-
+  if (target.tagName !== 'INPUT') return; // not on INPUt? Then we're not interested
   highlight(target); // highlight it
 };
 
@@ -73,4 +72,14 @@ function notifyEmpty(toggle, target) {
     target.classList.remove('error');
     errorSpan.classList.add('hidden');
   }
+}
+
+function handleReset() {
+  for (let elem of document.querySelectorAll('INPUT:not([type="button"]')) {
+    elem.value = '';
+  }
+  selectedInput.classList.remove('highlight');
+  selectedInput = null;
+  document.getElementById('tipAmount').innerText = (0).toFixed(2);
+  document.getElementById('totalAmount').innerText = (0).toFixed(2);
 }
