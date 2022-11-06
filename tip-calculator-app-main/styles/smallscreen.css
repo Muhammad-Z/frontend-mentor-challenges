@@ -68,6 +68,7 @@ input {
   text-align: right;
   border: none;
   width: 100%;
+  color: var(--very-dark-cyan);
 }
 
 .rounded {
@@ -164,4 +165,8 @@ input:hover {
 button:hover {
   cursor: pointer;
   background-color: var(--btn-hovered-color);
+}
+
+input::placeholder {
+  color: var(--dark-grayish-cyan);
 }
