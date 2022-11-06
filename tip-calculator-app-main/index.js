@@ -27,8 +27,8 @@ function computeAndShowMoney() {
     tipValue = selectedInput ? selectedInput.value.substr(0, selectedInput.value.length - 1) : 0;
   let tip = tipValue * 0.01
   let pplCount = document.getElementById('pplCount').value;
-  let tipAmount = bill * tip / pplCount;
-  let total = tipAmount + bill / pplCount;
+  let tipAmount = (pplCount && pplCount !== '0' ) ? bill * tip / pplCount : 0;
+  let total = (pplCount && pplCount !== '0' ) ? tipAmount + bill / pplCount : 0;
   document.getElementById('tipAmount').innerText = tipAmount ? tipAmount.toFixed(2) : (0).toFixed(2);
   document.getElementById('totalAmount').innerText = total ? total.toFixed(2) : (0).toFixed(2);
 }
