@@ -27,8 +27,8 @@ function computeAndShowMoney() {
     tipValue = selectedInput ? selectedInput.value.substr(0, selectedInput.value.length - 1) : 0;
   let tip = tipValue * 0.01
   let pplCount = document.getElementById('pplCount').value;
-  let tipAmount = (pplCount && pplCount !== '0' ) ? bill * tip / pplCount : 0;
-  let total = (pplCount && pplCount !== '0' ) ? tipAmount + bill / pplCount : 0;
+  let tipAmount = (pplCount && pplCount !== '0') ? bill * tip / pplCount : 0;
+  let total = (pplCount && pplCount !== '0') ? tipAmount + bill / pplCount : 0;
   document.getElementById('tipAmount').innerText = tipAmount ? tipAmount.toFixed(2) : (0).toFixed(2);
   document.getElementById('totalAmount').innerText = total ? total.toFixed(2) : (0).toFixed(2);
 }
@@ -39,8 +39,8 @@ document.getElementById('tip-options').addEventListener('click', computeAndShowM
 
 function validateInput(target) {
   let digitsRegex = /^\d+$/;
-  if (target.value === '')
-    return 'empty'
+  if (target.value === '0' || target.value === '')
+    return 'zero'
   if (!digitsRegex.test(target.value))
     return 'not a digit';
   return true;
@@ -49,7 +49,7 @@ function validateInput(target) {
 Array.from(document.querySelectorAll('INPUT')).map(elem => {
   let oldval;
   elem.addEventListener('input', (event) => {
-    if (event.target.id === 'pplCount' && validateInput(event.target) === 'empty') {
+    if (event.target.id === 'pplCount' && validateInput(event.target) === 'zero') {
       oldval = "";
       notifyEmpty(true, event.target);
     }
