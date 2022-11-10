@@ -115,6 +115,7 @@ header {
   bottom: 200%;
   left: 0;
   counter-increment: btnCounter;
+  font-size: 1rem;
 }
 
 .special-key {
