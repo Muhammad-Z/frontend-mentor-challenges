@@ -39,10 +39,15 @@ function handlePadClick(event) {
   }
 
   if (targetClass.contains('op-key')) {
+    if (savedString) {
+      numberString = parseEquation(parseFloat(numberString), opKey, parseFloat(savedString));
+      resultOutput.innerText = numberString;
+    }
+
     savedString = numberString;
     numberString = '';
     opKey = target.value;
-    resultOutput.innerText = opKey;
+    /* resultOutput.innerText = opKey; */
     return;
   }
 
