@@ -11,3 +11,29 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+document {
+  max-height: 100vh;
+}
+
+.pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 15%);
+  gap: 1vw;
+  padding: 1vw;
+  background-color: var(--keypad-bg-color);
+  padding-bottom: 5vh;
+  width: 100%;
+  height: fit-content;
+}
+
+button {
+  cursor: pointer;
+  height: 50px;
+  /* width: 100%;
+  aspect-ratio: 1 / 1; */
+  border: none;
+  font-size: 6vw;
+  font-weight: bold;
+}
