@@ -71,6 +71,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 // while I was trying to remove nodes I learned that getElements, children, nodes are live collections which cause a problem when you mutate it while looping.
 Better aproach in this case is using not live collection by using querySelectorAll
 
+// I learned how to make a gradient color border 
+ background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
