@@ -1,0 +1,47 @@
+:root {
+  /* Primary */
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background-start: hsl(192, 100%, 67%);
+  --check-background-end: hsl(280, 87%, 65%);
+
+  /* Neutral */
+
+  /* Light Theme */
+
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue-2: hsl(234, 39%, 85%);
+  --light-grayish-blue-1: hsl(236, 33%, 92%);
+  /* (hover) */
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  ;
+  --very-dark-grayish-blue-1: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-2: hsl(237, 14%, 26%);
+}
+
+.light-theme {
+  --main-bg-color: var(--very-light-grayish-blue);
+  --active-text-color: var(--very-dark-grayish-blue-2);
+  --field-bg-color: var(--very-light-gray);
+  --circle-color: var(--light-grayish-blue-2);
+  --completed-text-color: var(--dark-grayish-blue);
+  --active-btn-color: var(--bright-blue);
+  --hover-btn-color: var(--very-dark-grayish-blue-1);
+}
+
+.dark-theme {
+  --active-text-color: var(--light-grayish-blue-2);
+  --field-bg-color: var(--very-dark-blue);
+  --circle-color: var(--very-dark-desaturated-blue);
+  --completed-text-color: var(--dark-grayish-blue);
+  --active-btn-color: var(--bright-blue);
+  --hover-btn-color: var(--light-grayish-blue);
+}
