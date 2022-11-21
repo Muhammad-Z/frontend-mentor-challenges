@@ -192,3 +192,7 @@ button {
 .ul-bottom-line * {
   color: var(--completed-text-color);
 }
+
+h1 {
+  color: white;
+}
