@@ -79,6 +79,6 @@ function parseEquation(num1, opCode, num2) {
     case 'x':
       return num1 * num2;
     case '/':
-      return num1 / num2;
+      return num2 / num1;
   }
 }
