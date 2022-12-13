@@ -38,8 +38,9 @@
 }
 
 .dark-theme {
+  --main-bg-color: var(--very-dark-blue);
   --active-text-color: var(--light-grayish-blue-2);
-  --field-bg-color: var(--very-dark-blue);
+  --field-bg-color: var(--very-dark-desaturated-blue);
   --circle-color: var(--very-dark-desaturated-blue);
   --completed-text-color: var(--dark-grayish-blue);
   --active-btn-color: var(--bright-blue);

@@ -74,7 +74,6 @@ ul li {
 
 main {
   width: 100%;
-  counter-reset: liCounter;
 }
 
 .input-container {
@@ -195,4 +194,19 @@ button {
 
 h1 {
   color: white;
+}
+
+.theme-chooser {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+}
+
+.theme-chooser.light {
+  background-image: url('../images/icon-moon.svg');
+}
+
+.theme-chooser.dark {
+  background-image: url('../images/icon-sun.svg');
 }

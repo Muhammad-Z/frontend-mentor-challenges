@@ -109,3 +109,20 @@ function handleActiveBtnClickEvent(event) {
     activeBtn.classList.add('activeBtn');
   }
 }
+
+function handleThemeChooserClickEvent() {
+  var span = document.getElementById('theme-chooser')
+  if (span.classList.contains('light')) {
+    document.body.classList.remove('light-theme')
+    document.body.classList.add('dark-theme')
+    span.classList.remove('light')
+    span.classList.add('dark')
+  }
+
+  else {
+    document.body.classList.remove('dark-theme')
+    document.body.classList.add('light-theme')
+    span.classList.remove('dark')
+    span.classList.add('light')
+  }
+}
