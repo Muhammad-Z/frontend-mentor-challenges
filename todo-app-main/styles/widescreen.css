@@ -18,3 +18,7 @@ ul li::before {
   border-radius: 50%;
   border: 1px solid transparent;
 }
+
+#theme-chooser {
+  cursor: pointer;
+}
