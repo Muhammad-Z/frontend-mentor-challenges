@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  position: relative;
+  /* so absolute elements are relative to it  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+header {
+  border: 2px solid gray;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  text-align: center;
+  align-self: stretch;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+/* body {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+} */
+
+.scissors {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+}
+
+.paper {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+}
+
+.rock {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+}
+
+img {
+  border: 0.5rem solid transparent;
+  border-radius: 50%;
+  padding: 1vw;
+  object-fit: scale-down;
+}
+
+#bg-triangle-container {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  /*   width: 50vw; */
+}
+
+#bg-triangle {
+  display: block;
+  /*   width: 50vw; */
+  padding: 0 0;
+  height: 15rem;
+}
+
+#bg-triangle-container img~img {
+  position: absolute;
+  width: 30%;
+}
+
+#bg-triangle-container>.fig-1 {
+  left: 0;
+  top: 0;
+}
+
+#bg-triangle-container>.fig-2 {
+  right: 0;
+  top: 0;
+}
+
+#bg-triangle-container>.fig-3 {
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+#high-noon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*   align-items: end; */
+  gap: 5vw;
+}
+
+#high-noon div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 3vh;
+  color: white;
+  flex-basis: 40%;
+  flex-grow: 1;
+}
+
+
+/* .choice-container img {
+  width: 25vw;
+} */
+
+button {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 1rem 10vw;
+  margin: 0 auto;
+}
+
+button:hover,
+#play-again-btn:hover {
+  color: red;
+}
+
+#rules-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5vh;
+  margin: 0 0;
+}
+
+#score-panel {
+  color: hsl(229, 64%, 46%);
+}
+
+#score {
+  color: hsl(229, 25%, 31%);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+}
+
+#result-pane {
+  order: 3;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bot-choice-container {
+  order: 2;
+  transition-delay: 3s;
+}
+
+#play-again-btn {
+  color: hsl(237, 49%, 15%);
+  background-color: white;
+}

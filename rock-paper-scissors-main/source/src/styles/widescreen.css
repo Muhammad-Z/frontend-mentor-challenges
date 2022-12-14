@@ -1,0 +1,30 @@
+#rules-btn {
+  position: absolute;
+  left: auto;
+  right: 2rem;
+  bottom: 2rem;
+  padding-left:  4rem;
+  padding-right: 4rem;
+}
+
+#result-pane {
+  order: 1;
+}
+
+#high-noon {
+  flex-wrap: nowrap;
+}
+
+#high-noon div {
+  flex-grow: 0;
+}
+
+main {
+  width: 50vw;
+}
+
+#bg-triangle-container img ~ img {
+  width: 100px;
+}
+
+/* for each column flex make gap by  vh */
