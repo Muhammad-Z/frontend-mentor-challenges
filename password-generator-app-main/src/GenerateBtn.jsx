@@ -13,10 +13,8 @@ export default function GenerateBtn({setPassword}) {
       symbols: " !\\\"#$%&'()*+,-.:;<=>?@[]^_`{|}~",
     }
     const ranges = Object.keys(obj).filter(key => tasks[key]);
-    console.log('ranges is ', ranges, 'and its length ', ranges.length)
     if (ranges.length === 0) return;
 
-    console.log('rangs ', ranges)
     function getRandomElement(list) {
       return list[Math.floor(Math.random() * list.length)]
     }
@@ -26,7 +24,6 @@ export default function GenerateBtn({setPassword}) {
       const randVal = getRandomElement(obj[randField]);
       pass += randVal;
     }
-    console.log('pass is ', pass)
     setPassword(pass);
   }
 
