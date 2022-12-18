@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTasks } from './TasksContext';
 
-export default () => {
+export default ({password}) => {
   console.log('sup')
 
   return (
     <div>
-      <span></span>
+      <span>{password}</span>
     </div>
   )
 }
