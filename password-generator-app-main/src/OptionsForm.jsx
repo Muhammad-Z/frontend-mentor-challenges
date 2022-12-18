@@ -26,7 +26,8 @@ export default function OptionsForm() {
     <form onClick={handleFormClick}>
       <label>
         Character Length
-        <input type="range" name="passLeng" onChange={handleSliderChange} />
+        <input type="range" name="passLeng" min="0" max="24"
+          onChange={handleSliderChange} />
       </label>
 
       <label>
