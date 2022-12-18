@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Launch index.html",
+          "type": "firefox",
+          "request": "launch",
+          "reAttach": false,
+          "url": "http://127.0.0.1:5173",
+          "skipFiles": ["**/node_modules/**"],
+      }
+  ]
+}
