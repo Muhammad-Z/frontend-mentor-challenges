@@ -1,8 +1,7 @@
 import React from 'react';
-import { useTasks, useTasksDispatch } from './TasksContext.jsx';
+import { useTasksDispatch } from './TasksContext.jsx';
 
 export default function OptionsForm() {
-  const tasks = useTasks();
   const dispatch = useTasksDispatch();
 
   function handleFormClick(e) {
