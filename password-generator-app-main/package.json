@@ -6,11 +6,14 @@
   "scripts": {
     "start": "vite",
     "preview": "vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "vite serve"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-ssr": "^0.4.62"
   },
   "devDependencies": {
     "babel-preset-nano-react-app": "^0.1.0",

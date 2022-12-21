@@ -23,32 +23,32 @@ export default function OptionsForm() {
   }
 
   return (
-    <form onClick={handleFormClick}>
+    <form class="row" onClick={handleFormClick}>
       <label>
-        Character Length
+        Character Length <br />
         <input type="range" name="passLeng" min="0" max="24"
           onChange={handleSliderChange} />
-      </label>
+      </label> <br />
 
       <label>
         <input type="checkbox" name="upper" />
         Include Uppercase Letters
-      </label>
+      </label> <br />
 
       <label>
         <input type="checkbox" name="lower" />
         Include Lowercase Letters
-      </label>
+      </label> <br />
 
       <label>
         <input type="checkbox" name="numbers" />
         Include Numbers
-      </label>
+      </label> <br />
 
       <label>
         <input type="checkbox" name="symbols" />
         Include Symbols
-      </label>
+      </label> <br />
     </form>
   )
 }
