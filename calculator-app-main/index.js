@@ -17,8 +17,8 @@ function toggleTheme(theme) {
   body.classList.add(theme);
 }
 
-var numberString = '';
-var savedString;
+var numberString = ''; //shown on screen
+var savedString; //accumalator
 var opKey;
 var resultOutput = document.getElementById('result-output');
 
@@ -34,6 +34,7 @@ function handlePadClick(event) {
 
   if (targetClass.contains('equal-key')) {
     numberString = parseEquation(parseFloat(numberString), opKey, parseFloat(savedString));
+    savedString = '';
     resultOutput.innerText = numberString;
     return;
   }
@@ -62,7 +63,7 @@ function handlePadClick(event) {
     }
 
     if (target.value === 'RESET') {
-      numberString = result = opKey = '';
+      numberString = result = savedString= opKey = '';
       resultOutput.innerText = '0';
       return;
     }
